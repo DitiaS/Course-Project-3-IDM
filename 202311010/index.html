@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Score Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <h1>Cricket Score Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="id">ID:</label>
+        <input type="text" name="id" required><br>
+
+        <label for="opposite">Opposite:</label>
+        <input type="text" name="opposite" required><br>
+
+        <label for="R">R:</label>
+        <input type="number" name="R" required><br>
+
+        <label for="B">B:</label>
+        <input type="number" name="B" required><br>
+
+        <label for="M">M:</label>
+        <input type="number" name="M" required><br>
+
+        <label for="o">Overs:</label>
+        <input type="number" name="o" required><br>
+
+        <label for="run">Runs:</label>
+        <input type="number" name="run" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

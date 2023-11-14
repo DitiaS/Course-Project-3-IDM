@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <h1>Prediction Results</h1>
+    <p>Predicted 4s: {{ predicted_4s }}</p>
+    <p>Predicted 6s: {{ predicted_6s }}</p>
+    <p>Predicted Wickets: {{ predicted_wickets }}</p>
+</body>
+</html>
